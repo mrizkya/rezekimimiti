@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="id-ID">
+  <head>
+    <!---------------------------------Kode untuk mencegah seleksi teks, block teks--------------------------------->
+    <!--<script type="text/javascript">
+      function disableSelection(e) {
+        if (typeof e.onselectstart != "undefined")
+          e.onselectstart = function () {
+            return false;
+          };
+        else if (typeof e.style.MozUserSelect != "undefined") e.style.MozUserSelect = "none";
+        else
+          e.onmousedown = function () {
+            return false;
+          };
+        e.style.cursor = "default";
+      }
+      window.onload = function () {
+        disableSelection(document.body);
+      };
+    </script>-->
+
+    <!-----------------------------------Kode untuk mematikan fungsi klik kanan------------------------------------->
+    <!---<script type="text/javascript">
+      function mousedwn(e) {
+        try {
+          if (event.button == 2 || event.button == 3) return false;
+        } catch (e) {
+          if (e.which == 3) return false;
+        }
+      }
+      document.oncontextmenu = function () {
+        return false;
+      };
+      document.ondragstart = function () {
+        return false;
+      };
+      document.onmousedown = mousedwn;
+    </script>--->
+
+    <!--------------------------------Kode untuk mencegah shorcut keyboard, view source ---------------------------->
+    <!---<script type="text/javascript">
+      window.addEventListener("keydown", function (e) {
+        if (e.ctrlKey && (e.which == 65 || e.which == 66 || e.which == 67 || e.which == 73 || e.which == 80 || e.which == 83 || e.which == 85 || e.which == 86)) {
+          e.preventDefault();
+        }
+      });
+      document.keypress = function (e) {
+        if (e.ctrlKey && (e.which == 65 || e.which == 66 || e.which == 67 || e.which == 73 || e.which == 80 || e.which == 83 || e.which == 85 || e.which == 86)) {
+        }
+        return false;
+      };
+    </script>
+    <script type="text/javascript">
+      document.onkeydown = function (e) {
+        e = e || window.event;
+        if (e.keyCode == 123 || e.keyCode == 18) {
+          return false;
+        }
+      };
+    </script>
+    <script type="text/javascript">
+    function mousedwn(e){try{if(event.button==2||event.button==3)return false}catch(e){if(e.which==3)return false}}document.oncontextmenu=function(){return false};document.ondragstart=function(){return false};document.onmousedown=mousedwn
+    </script>
+    <script type="text/javascript">
+    function disableSelection(e){if(typeof e.onselectstart!="undefined")e.onselectstart=function(){return false};else if(typeof e.style.MozUserSelect!="undefined")e.style.MozUserSelect="none";else e.onmousedown=function(){return false};e.style.cursor="default"}window.onload=function(){disableSelection(document.body)}
+    </script>---->
+
+    <!-------------------------------------------- REQUIRED META TAGS ---------------------------------------------->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="Portfolio Muhammad Rizky Awaludin" name="description" />
+    <meta content="RezekiMimiti" name="keywords" />
+    <meta content="Muhammad Rizky Awaludin" name="author" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-------------------------------------------- TITLE ----------------------------------------------------------->
+    <title>RezekiMimiti</title>
+
+    <!-------------------------------------------- CSS FILE -------------------------------------------------------->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <!--<link href='https://cdn.jsdelivr.net/gt/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>--->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    
+    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jquery/jquery@3.2.1/src/core.min.js" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />--->
+    <!-------------------------------------------- FAVICON --------------------------------------------------------->
+    <link rel="apple-touch-icon" href="assets/favicon_io/apple-touch-icon.png" />
+    <link href="assets/favicon_io/android.png" rel="icon" />
+    
+
+    <!-------------------------------------------- Font Google ----------------------------------------------------->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" />
+
+    <script src="https://kit.fontawesome.com/5a1af6de26.js" crossorigin="anonymous"></script>
+
+    <!------------------------------------------- JS FILE ---------------------------------------------------------->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    
+
+
+
+      <!-- Link Swiper's CSS -->
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+  />
+
+  <!-- Demo styles -->
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+
+
+
+
+
+
+
+
+
+
+
+    <!--<script src="https://cdn.jsdelivr.net/gh/https://cdn.jsdelivr.net/gh/jquery/jquery@3.2.1/src/core.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>-->
+  </head>
+
+  <body>
+    <!---------------------------------------------- NAVBAR -------------------------------------------------------->
+
+    <div class="scroll-up-btn">
+      <i class="fas fa-angle-up"></i>
+    </div>
+    <nav class="navbar">
+      <div class="max-width">
+        <div class="logo">
+          <a href="#home"><span>Rizky</span></a>
+        </div>
+        <ul class="menu">
+          <li><a href="#home" class="menu-btn" name="user-circle">Beranda</a></li>
+          <li><a href="#about" class="menu-btn">Tentang Saya</a></li>
+          <li><a href="#education" class="menu-btn">Pendidikan</a></li>
+          <li><a href="#skills" class="menu-btn">Keterampilan</a></li>
+          <li><a href="#achievement" class="menu-btn">Pencapaian</a></li>
+          <li><a href="#contact" class="menu-btn">Kontak</a></li>
+        </ul>
+        <div class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+    <!---------------------------------------------- END NAVBAR ---------------------------------------------------->
+
+    <!------------------------------------------- HOME SECTION ----------------------------------------------------->
+    <section class="home" id="home">
+      <div class="max-width">
+        <div class="home-content">
+          <div class="text-1">Halo, Saya</div>
+          <div class="text-2">Muhammad Rizky Awaludin</div>
+          <div class="text-3">Lulusan<span class="typing"></span></div>
+          <a href="#about">Selanjutnya</a>
+        </div>
+      </div>
+    </section>
+    <!---------------------------------------------- END HOME SECTION ---------------------------------------------->
+
+    <!------------------------------------------------ ABOUT SECTION ----------------------------------------------->
+    <section class="about" id="about">
+      <div class="max-width">
+        <h2 class="title far fa-user-circle">Tentang Saya</h2>
+        <div class="about-content">
+          <div class="column left">
+            <img src="assets/img/rizky.png" alt="" />
+          </div>
+          <div class="column right">
+            <div class="text">Saya Rizky dan saya<span class="typing-2"></span></div>
+            <br />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ut voluptatum eveniet doloremque autem excepturi eaque, sit laboriosam voluptatem nisi delectus. Facere explicabo hic minus accusamus alias fuga nihil dolorum
+              quae. Explicabo illo unde, odio consequatur ipsam possimus veritatis, placeat, ab molestiae velit inventore exercitationem consequuntur blanditiis omnis beatae. Dolor iste excepturi ratione soluta quas culpa voluptatum
+              repudiandae harum non.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---------------------------------------------- END ABOUT SECTION --------------------------------------------->
+
+    <!---------------------------------------------- EDUCATION SECTION --------------------------------------------->
+    <section class="education" id="education">
+      <div class="max-width">
+        <h2 class="title">Pendidikan</h2>
+        <div class="educ-content">
+          <div class="card">
+            <div class="box">
+              <!--<div class="swiper">-->
+                <!-- Parallax background element -->
+                <!--<div
+                  class="parallax-bg"
+                  style="background-image:url(assets/img/smkn4.png)"
+                  data-swiper-parallax="-23%"
+                ></div>
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">-->
+                    <!-- Each slide has parallax title -->
+                    <!--<div class="title" data-swiper-parallax="-100">SMK Negeri 4 Kota Sukabumi</div>--->
+                    <!-- Parallax subtitle -->
+                    <!---<div class="subtitle" data-swiper-parallax="-200">Teknik Mesin</div>--->
+                    <!-- And parallax text with custom transition duration -->
+                    <!---<div
+                      class="text"
+                      data-swiper-parallax="-300"
+                      data-swiper-parallax-duration="600"
+                    >
+                      <p>Saya mengambil jurusan teknik mesin yang berfokus terutama pada pengelasan</p>
+                    </div>--->
+                    <!-- Opacity parallax -->
+                    <!--<div data-swiper-parallax-opacity="0.5">I will change opacity</div>--->
+                    <!-- Scale parallax -->
+                    <!--<div data-swiper-parallax-scale="0.15">I will change scale</div>
+                  </div>
+                  ...
+                </div>
+              </div>--->
+
+
+
+
+
+
+             <img src="assets/img/smkn4.png" alt="" />
+              <strong><div class="text1">SMKN 4 Kota Sukabumi</div></strong>
+              <br />
+              <strong><div class="text2">~Teknik Mesin~</div></strong>
+              <br />
+              <p>Saya mengambil jurusan teknik mesin yang berfokus terutama pada pengelasan</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="box">
+              <img src="assets/img/polteksmi.png" alt="" />
+              <div class="text1">Politeknik Sukabumi</div>
+              <br />
+              <div class="text2">~Teknik Komputer~</div>
+              <br />
+              <p>Saya mengambil jurusan teknik komputer yang berfokus pada perangkat lunak seperti web dan android</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---------------------------------------------- END EDUCATION SECTION ----------------------------------------->
+
+    <!---------------------------------------------- SKILLS SECTION  ----------------------------------------------->
+    <section class="skills" id="skills">
+      <div class="max-width">
+        <h2 class="title">Keterampilan</h2>
+        <div class="skills-content">
+          <div class="column left">
+            <div class="text">Keterampilan kreatif saya</div>
+            <p>
+              Kemampuan saya masih rendah dibandingkan dengan mereka yang sudah mahir tetapi saya akan terus belajar untuk meningkatkan kemampuan saya, karena seseorang dikatakan mahir bukan karena dia yang paling hebat tetapi dia terus
+              konsisten belajar
+            </p>
+          </div>
+          <div class="column right">
+            <div class="bars">
+              <div class="info">
+                <span>HTML</span>
+                <span>80%</span>
+              </div>
+              <div class="line html"></div>
+            </div>
+            <div class="bars">
+              <div class="info">
+                <span>CSS</span>
+                <span>65%</span>
+              </div>
+              <div class="line css"></div>
+            </div>
+            <div class="bars">
+              <div class="info">
+                <span>JavaScript</span>
+                <span>60%</span>
+              </div>
+              <div class="line js"></div>
+            </div>
+            <div class="bars">
+              <div class="info">
+                <span>PHP</span>
+                <span>70%</span>
+              </div>
+              <div class="line php"></div>
+            </div>
+            <div class="bars">
+              <div class="info">
+                <span>MySQL</span>
+                <span>70%</span>
+              </div>
+              <div class="line mysql"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---------------------------------------------- END SKILLS SECTION -------------------------------------------->
+
+    <!---------------------------------------------- ACHIEVEMENT SECTION ------------------------------------------->
+    <section class="achievement" id="achievement">
+
+        <h2 class="title">Pencapaian</h2>
+        
+
+
+<!-- Link Swiper's CSS -->
+<link
+rel="stylesheet"
+href="https://unpkg.com/swiper/swiper-bundle.min.css"
+/>
+
+<!-- Demo styles -->
+<style>
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+      <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"> <img src="assets/img/androidpemula.jpg" alt="androidpemula" /></div>
+        <div class="swiper-slide"> <img src="assets/img/java.jpg" alt="java" /></div>
+        <div class="swiper-slide"> <img src="assets/img/java2.jpg" alt="java2" /></div>
+        <div class="swiper-slide"> <img src="assets/img/poster.jpg" alt="poster" /></div>
+        <div class="swiper-slide"> <img src="assets/img/solid.jpg" alt="solid" /></div>
+        <div class="swiper-slide"> <img src="assets/img/swift.jpg" alt="swift" /></div>
+        <div class="swiper-slide"> <img src="assets/img/swift4.jpg" alt="swift4" /></div>
+        <div class="swiper-slide"> <img src="assets/img/vis.data.jpg" alt="visdata" /></div>
+        <div class="swiper-slide"> <img src="assets/img/html.jpg" alt="html" /></div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+          type: "progressbar",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
+
+
+          
+        
+
+    </section>
+    <!---------------------------------------------- END ACHIEVEMENT SECTION --------------------------------------->
+
+    <!----------------------------------------------- CONTACT SECTION ---------------------------------------------->
+    <section class="contact" id="contact">
+      <div class="max-width">
+        <h2 class="title">Hubungi Saya</h2>
+        <div class="contact-content">
+          <div class="column left"></div>
+          <div class="column right">
+            <div class="text">Pesan Saya</div>
+            <form action="#">
+              <div class="fields">
+                <div class="field name">
+                  <input type="text" placeholder="Nama" required />
+                </div>
+                <div class="field email">
+                  <input type="email" placeholder="Email" required />
+                </div>
+              </div>
+              <div class="field">
+                <input type="text" placeholder="Subjek" required />
+              </div>
+              <div class="field textarea">
+                <textarea cols="30" rows="10" placeholder="Pesan.." required></textarea>
+              </div>
+              <div class="button-area">
+                <button type="submit">Mengirim Pesan</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---------------------------------------------- END CONTACT SECTION ------------------------------------------->
+
+    <!----------------------------------------------- FOOTER-------------------------------------------------------->
+    <footer class="footer">
+      <p class="footer-title">Muhammad Rizky Awaludin</p>
+      <div class="footer-social">
+        <a href="https://linkedin.com/in/muhrizkya"><i class="fab fa-linkedin" style="font-size: 20px; color: #007bb5"></i></a>
+        <a href="https://instagram.com/rezekimimiti"><i class="fab fa-instagram-square" style="font-size: 20px; color: #c32aa3"></i></a>
+        <a href="https://twitter.com/rezekimimiti"><i class="fab fa-twitter-square" style="font-size: 20px; color: #1da1f2"></i></a>
+      </div>
+      <p>&#169; 2021 copyright all right reserved</p>
+    </footer>
+    <!---------------------------------------------- END FOOTER ---------------------------------------------------->
+
+    <!--=========================================== SCROLL REVEAL ================================================-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!---------------------------------------------- JS ------------------------------------------------------------>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
