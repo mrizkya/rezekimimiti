@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="id-ID">
   <head>
+    
+    
+    
     <!---------------------------------Kode untuk mencegah seleksi teks, block teks--------------------------------->
     <script type="text/javascript">
       function disableSelection(e) {
@@ -20,8 +23,9 @@
       };
     </script>
 
+    
     <!-----------------------------------Kode untuk mematikan fungsi klik kanan------------------------------------->
-    <script type="text/javascript">
+    <!--<script type="text/javascript">
       function mousedwn(e) {
         try {
           if (event.button == 2 || event.button == 3) return false;
@@ -36,7 +40,7 @@
         return false;
       };
       document.onmousedown = mousedwn;
-    </script>
+    </script>-->
 
     <!--------------------------------Kode untuk mencegah shorcut keyboard, view source ---------------------------->
     <script type="text/javascript">
@@ -66,6 +70,10 @@
     function disableSelection(e){if(typeof e.onselectstart!="undefined")e.onselectstart=function(){return false};else if(typeof e.style.MozUserSelect!="undefined")e.style.MozUserSelect="none";else e.onmousedown=function(){return false};e.style.cursor="default"}window.onload=function(){disableSelection(document.body)}
     </script>
 
+    
+    
+    
+    
     <!-------------------------------------------- REQUIRED META TAGS ---------------------------------------------->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
