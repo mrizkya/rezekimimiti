@@ -32,9 +32,9 @@ $(document).ready(function(){
     });
 
      // toggle menu/navbar script
-     $('.nav-link scroolto').click(function(){
+     $('.menu-btn').click(function(){
         $('.navbar .menu').toggleClass("active");
-        $('.nav-link scroolto i').toggleClass("active");
+        $('.menu-btn i').toggleClass("active");
     });
 
     // typing text animation script
