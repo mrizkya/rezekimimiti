@@ -163,37 +163,7 @@ section .title::after {
 }
 
 /* home section styling */
-.home {
-  display: flex;
-  background: #888 no-repeat center;
-  height: 100vh;
-  color: #333;
-  min-height: 400px;
-  background-size: cover;
-  background-attachment: fixed;
-  font-family: "Roboto Condensed", sans-serif;
-}
-.home .max-width {
-  width: 100%;
-  display: flex;
-}
-.home .max-width .row {
-  margin-right: 0;
-}
-.home .home-content .text-1 {
-  font-size: 35px;
-}
-.home .home-content .text-2 {
-  font-size: 66px;
-  font-weight: 600;
-}
-.home .home-content .text-3 {
-  font-size: 40px;
-}
-.home .home-content .text-3 span {
-  color: #18d26e;
-  font-weight: 400;
-}
+
 
 
 /* about section styling */
